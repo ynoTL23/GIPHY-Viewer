@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3b4252;
+}
+
+#root #header {
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    background-color: #2e3440;
+    box-shadow: 0px 1px 10px #fff;
+
+}
+
+#root #header nav {
+    display: flex;
+    margin: auto 2rem;
+    padding: 1rem;
+}
+
+#root #header #home {
+    margin: auto 3rem;
+    font-size: 3rem;
+    color: #88c0d0;
+}
+
+#root #header #home:hover {
+    color: #5e81ac;
+    cursor: pointer;
+}
+
+#root #header nav ul {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+}
+
+#root #header nav li {
+    margin: auto 2rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    background-color: #ebcb8b;
+    color: #4c566a;
+    border: 1px #4c566a solid;
+}
+
+#root #header nav li:hover {
+    background-color: #eceff4;
+    color: #4c566a;
+    border-color: #4c566a;
+    cursor: pointer;
+}
+
+#root #header nav #search-box {
+    padding: 0.5rem;
+    width: 15vw;
+    border-radius: 5px;
+    outline: none;
+    background-color: #d8dee9;
+    color: #4c566a;
+    font-size: 1.5rem;
+}
+
+#root #header nav #search-box:focus {
+    border: 2px #88c0d0 solid;
+}
+
+#root #header nav #search-box::placeholder {
+    font-style: italic;
+}
