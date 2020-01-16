@@ -1,0 +1,21 @@
+body {
+    background-color: #3b4252;
+}
+
+#content #welcome {
+    margin: auto;
+    margin-top: 10rem;
+    width: 75vw;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+#content #welcome h1 {
+    color: #8be9fd;
+}
+
+#content #welcome p {
+    color: #f8f8f2;
+    margin-top: 2rem;
+}

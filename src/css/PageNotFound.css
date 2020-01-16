@@ -1,0 +1,41 @@
+#content #error {
+    margin: auto;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: #f8f8f2;
+}
+
+#content #error #error-msg h1 {
+    font-size: 20rem;
+    font-weight: bold;
+}
+
+#content #error #error-msg p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#content #error #home-button {
+    margin-top: 3rem;
+}
+
+#content #error #home-button a {
+    margin: auto;
+    padding: 1rem 3rem;
+    width: fit-content;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    background-color: #ff5555;
+    color: #f8f8f2;
+    border: 2px #f8f8f2 solid;
+}
+
+#content #error #home-button a:hover {
+    color: #ff5555;
+    background-color: #f8f8f2;
+    border-color: #ff5555;
+}
