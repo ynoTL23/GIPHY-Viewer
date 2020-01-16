@@ -19,6 +19,20 @@ export const searchTrending = () => {
     })
 }
 
+export const customSearch = (query) => {
+    const apiUrl = `${apiUrlBase}search?q=${query}&api_key=${apiKey}`
+console.log(apiUrl)
+    callApi(apiUrl).then((data) => {
+        const gifs = data['data']
+        const renderGifs = gifs.map((gif) => (
+            GifContainer(gif['embed_url'])
+        ))
+        ReactDOM.render(renderGifs, document.getElementById('gallery'))
+    }).catch((err) => {
+        console.log(err)
+    })
+}
+
 const callApi = async (url)  => {
     const response = await fetch(url)
     if (response.status === 200) {
