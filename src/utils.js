@@ -1,14 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Container, ErrorContainer } from './Container'
+import { ErrorContainer, GifContainer } from './Container'
 
-const apiUrl = 'http://api.giphy.com/v1/gifs/'
+const apiUrlBase = 'http://api.giphy.com/v1/gifs/'
 const apiKey = 'qj0LTbpFCXOjNLc3lqTab5Kf4QXMMyhr'
 
 export const searchTrending = () => {
-    const gifUrl = apiUrl + 'trending?api_key=' + apiKey
-    ReactDOM.render(<Container />, document.getElementById('content'))
-    console.log(gifUrl)
+    const apiUrl = `${apiUrlBase}trending?api_key=${apiKey}`
+
+    callApi(apiUrl).then((data) => {
+        const gifs = data['data']
+        const renderGifs = gifs.map((gif) => (
+            GifContainer(gif['embed_url'])
+        ))
+        ReactDOM.render(renderGifs, document.getElementById('gallery'))
+    }).catch((err) => {
+        console.log(err)
+    })
 }
 
 const callApi = async (url)  => {

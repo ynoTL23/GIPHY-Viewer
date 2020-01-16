@@ -1,21 +1,9 @@
 import React, { Component } from 'react'
-import './css/Container.css'
 
-export class Container extends Component {
-    render() {
-        return (
-			<div id='container'>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-                <iframe src="https://giphy.com/embed/3o7bufkPz3LRof205G" frameborder="0"></iframe>
-            </div>
-		)
-    }
+export const GifContainer = (imageUrl) => {
+    return (
+        <iframe src={imageUrl} frameborder="0" width='400' height='270'></iframe>
+    )
 }
 
 export class ErrorContainer extends Component {

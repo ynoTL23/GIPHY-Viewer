@@ -9,7 +9,6 @@ import Trending from './Trending'
 import PageNotFound from './PageNotFound'
 
 import './css/index.css'
-let eventHandler = require('./utils.js')
 
 const navigation = (
 	<Router>

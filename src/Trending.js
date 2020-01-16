@@ -1,9 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { searchTrending } from './utils'
+import './css/Trending.css'
 
 export default class Trending extends Component {
     render() {
         return (
-            <h1>TRENDING TAB</h1>
+            <div id='trending'>
+                <h1>Trending Right Now</h1>
+                <div id='gallery'>
+                    {searchTrending()}
+                </div>
+            </div>
         )
     }
 }

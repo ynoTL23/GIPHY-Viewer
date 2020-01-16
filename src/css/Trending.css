@@ -1,0 +1,28 @@
+/* Container/Gallery */
+#content #trending {
+    width: 100%;
+    text-align: center;
+}
+
+#content #trending h1 {
+    margin: 2rem auto;
+    font-size: 3rem;
+    color: #f8f8f2;
+}
+
+#content #trending #gallery {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 95vw;
+
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Gif Container */
+iframe {
+    margin: 2rem 1rem;
+}
