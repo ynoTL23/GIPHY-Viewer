@@ -1,0 +1,10 @@
+#content #error {
+    margin: auto;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#content #error h1 {
+    color: #ff5555;
+}
